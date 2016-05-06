@@ -329,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=/usr/local/opt/ruby/bin:/usr/local/bin:$PATH\nbrew update\nbrew upgrade\ngem update --system\ngem update cocoa pods\ncd ${SRCROOT}\nif [ -e \"Pods\" ]\nthen\npod update\nelse\npod install\nfi";
+			shellScript = "";
 		};
 		72CE4899A633A160F39C6016 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
