@@ -10,8 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var background : UIView?
+    var popUp : UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let frame = CGRectMake(0, 0, 100, 100)
+        popUp = UIView(frame: frame)
+        popUp?.backgroundColor = UIColor.greenColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +26,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickButton(sender: AnyObject) {
+        
+        
+    }
+    
+    private func basicAnimation() {
+        let animation = POPBasicAnimation.defaultAnimation()
+    }
 
 }
 
