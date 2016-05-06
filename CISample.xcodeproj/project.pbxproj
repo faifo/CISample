@@ -185,6 +185,7 @@
 				470D04921CD9E9DE005DA57C /* Resources */,
 				29F61F69A0603F46FEED1A39 /* Embed Pods Frameworks */,
 				B5AFD7F886555659ACE1302E /* Copy Pods Resources */,
+				4777D2391CDC8CD300E8FC50 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -316,6 +317,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CISample/Pods-CISample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4777D2391CDC8CD300E8FC50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/usr/local/opt/ruby/bin:/usr/local/bin:$PATH\nbrew update\nbrew upgrade\ngem update --system\ngem update cocoa pods\ncd ${SRCROOT}\nif [ -e \"Pods\" ]\nthen\npod update\nelse\npod install\nfi";
 		};
 		72CE4899A633A160F39C6016 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
