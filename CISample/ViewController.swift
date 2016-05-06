@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         let frame = CGRectMake(0, 0, 100, 100)
         popUp = UIView(frame: frame)
         popUp?.backgroundColor = UIColor.greenColor()
+        // sua cai bo me gi day
         // Do any additional setup after loading the view, typically from a nib.
     }
 
