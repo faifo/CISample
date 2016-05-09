@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'CISample' do
-pod 'pop'
+#pod 'pop'
 end
 
 target 'CISampleTests' do
